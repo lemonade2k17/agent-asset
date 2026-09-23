@@ -1,0 +1,39 @@
+# ---------- 操作系统 ----------
+# Windows 缩略图缓存与系统生成文件
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS 目录元数据
+.DS_Store
+._*
+
+# 编辑器自动备份
+*~
+
+# ---------- 编辑器与 IDE（Integrated Development Environment，集成开发环境）----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+.history/
+
+# ---------- 语言与工具产物 ----------
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+build/
+*.log
+
+# ---------- 本地工具状态 ----------
+# Command Code 的本地配置与学习数据，仅存于本机
+.commandcode/
+
+# ---------- 临时文件 ----------
+*.tmp
+*.bak

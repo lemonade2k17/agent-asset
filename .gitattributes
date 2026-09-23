@@ -1,0 +1,44 @@
+# 换行符统一策略
+# 文本文件入库与检出均使用 LF（Line Feed，换行符），避免跨平台协作时整文件差异
+* text=auto eol=lf
+
+# Windows 专用脚本必须使用 CRLF（Carriage Return + Line Feed，回车符 + 换行符）
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell 脚本强制 LF，否则在 Linux / macOS 上无法执行
+*.sh text eol=lf
+
+# 显式声明的文本文件
+*.md text
+*.txt text
+*.json text
+*.yaml text
+*.yml text
+*.toml text
+*.js text
+*.mjs text
+*.cjs text
+*.ts text
+*.py text
+
+# 二进制文件（禁止换行符转换与文本差异对比）
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.zip binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# SVG（Scalable Vector Graphics，可缩放矢量图形）是纯文本
+*.svg text
